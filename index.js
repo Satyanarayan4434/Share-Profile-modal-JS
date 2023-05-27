@@ -3,12 +3,12 @@ let profileModal = document.getElementById("profileModal");
 let overlay = document.getElementById('overlay');
 
 function openModal(){
-    profileBody.style.display = "none";
     overlay.style.display = "block";
     profileModal.style.display = "block";
+    profileBody.style.opacity = "30%"
 }
 function closeModal() {
-    profileBody.style.display = "flex";
-    overlay.style.display = "";
+    overlay.style.display = "none";
     profileModal.style.display = "none";
+    profileBody.style.opacity = "100%"
 }

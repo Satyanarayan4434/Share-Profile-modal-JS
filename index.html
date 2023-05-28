@@ -6,8 +6,8 @@
   <link href="main.css" rel="stylesheet">
 </head>
 <body class="bg-slate-950 relative">
-    <div class="redCircle"></div>
-    <div class="blueCircle"></div>
+    <div class="animate-pulse w-[200px] h-[200px] bg-orange-600 rounded-full drop-shadow-3xl absolute top-4 right-[30%] opacity-90"></div>
+    <div class="w-[250px] h-[250px] bg-orange-400 rounded-full drop-shadow-3xl absolute bottom-6 left-[25%] opacity-90"></div>
   <div class=" flex justify-center items-center h-screen">
     <div id="profileBody" class=" z-2 flex flex-col items-center gap-5 border-2 border-[#ffffff30] p-10 rounded-md bg-[#ffffff1a] backdrop-blur-3xl">
         <img src="./assets/profile.svg" alt="" class="w-[14rem]">
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div id="profileModal" class=" z-10 hidden absolute border-2 border-[#ffffff30] bg-[#ffffff1] backdrop-blur-2xl px-5 py-10 rounded-xl">
+    <div id="profileModal" class=" z-10 hidden absolute border-2 border-[#ffffff30] bg-slate-800 backdrop-blur-2xl px-5 py-10 rounded-xl">
         <button onclick="closeModal()" class="text-white absolute top-2 right-5"><i class="fa-sharp fa-solid fa-xmark"></i></button>
         <h1 class="text-white font-mono font-bold text-4xl mb-4">Share My Profile</h1>
         <div class="w-[30rem] h-[1px] bg-white"></div>
@@ -36,7 +36,7 @@
         </div>
     </div>
 </div>
-<div id="overlay" onclick="closeModal()" class="hidden bg-white w-full h-screen absolute top-0 z-0 opacity-20 "></div>
+<div id="overlay" onclick="closeModal()" class="hidden bg-white w-full h-screen absolute top-0 z-0 opacity-60 "></div>
 <script src="index.js"></script>
 <script src="https://kit.fontawesome.com/985f49428b.js" crossorigin="anonymous"></script>
 </body>
